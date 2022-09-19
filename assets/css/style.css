@@ -41,8 +41,12 @@ html{
 .mt-8 { 
     margin-top: 8px !important;
 }
-.mbt-16 {
+.mt-16 {
     margin-bottom: 16px !important;
+}
+.mt-32 {
+    margin-bottom: 32px !important;
+
 }
 
 .col-third {
@@ -56,6 +60,8 @@ html{
 .col-full {
     width: 100%;
 }
+
+
 
 .text-center {
     text-align: center !important;
@@ -72,6 +78,7 @@ html{
     left: 0px;
     right: 0px;
     z-index: 1;
+    
 }
 
 #nav>li {
@@ -155,10 +162,18 @@ html{
 
     font-size: 12px;
 }
-
+#header .mobile-memu-btn,
 #header .search-btn { 
     float: right;
     padding: 0px 21px;
+}
+#header .mobile-memu-btn:hover{
+    background-color:#ccc
+   
+}
+#header .mobile-memu-btn:hover .menu-icon {
+    color:#000
+   
 }
 
 #header .search-btn:hover{
@@ -167,12 +182,23 @@ html{
 
 
 }
-
+#header .menu-icon, 
 #header .search-icon {
     color:#fff;
     font-size: 20px;
     line-height: 46px;
 }
+
+#header .mobile-memu-btn{
+    display:block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+
+
+}
+
 
 
 #slider {
@@ -211,9 +237,12 @@ html{
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0px 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 
 }
 
@@ -349,7 +378,7 @@ html{
     text-decoration: none;
     padding: 10px 16px;
     display: inline-block;
-    margin: 14px;
+    margin-top: 14px;
     
 }
 .place-buy-btn:hover{
